@@ -1,0 +1,112 @@
+2025-02-24 12:03:29,689 ERROR: Exception on /messages [GET] [in C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\app\routes.py", line 247, in messages
+    return render_template('messages.html', messages=messages.items,
+                           next_url=next_url, prev_url=prev_url)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\student2\Desktop\p\app\templates\messages.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\student2\Desktop\p\app\templates\base.html", line 67, in top-level template code
+    {% block content %}
+  File "C:\Users\student2\Desktop\p\app\templates\messages.html", line 4, in block 'content'
+    <h1>{{ _('Messages') }}</h1>
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: '_' is undefined
+2025-02-24 12:03:31,027 ERROR: Exception on /messages [GET] [in C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\app\routes.py", line 247, in messages
+    return render_template('messages.html', messages=messages.items,
+                           next_url=next_url, prev_url=prev_url)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\student2\Desktop\p\app\templates\messages.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\student2\Desktop\p\app\templates\base.html", line 67, in top-level template code
+    {% block content %}
+  File "C:\Users\student2\Desktop\p\app\templates\messages.html", line 4, in block 'content'
+    <h1>{{ _('Messages') }}</h1>
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: '_' is undefined
+2025-02-24 12:03:33,296 ERROR: Exception on /messages [GET] [in C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\app\routes.py", line 247, in messages
+    return render_template('messages.html', messages=messages.items,
+                           next_url=next_url, prev_url=prev_url)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\student2\Desktop\p\app\templates\messages.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\student2\Desktop\p\app\templates\base.html", line 67, in top-level template code
+    {% block content %}
+  File "C:\Users\student2\Desktop\p\app\templates\messages.html", line 4, in block 'content'
+    <h1>{{ _('Messages') }}</h1>
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: '_' is undefined
+2025-02-24 12:03:46,378 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]

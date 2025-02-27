@@ -1,0 +1,95 @@
+2025-02-24 12:20:16,920 ERROR: Exception on /send_message/earg [GET] [in C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\app\routes.py", line 229, in send_message
+    return render_template('send_message.html', title=('Send Message'),
+                           form=form, recipient=recipient)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\student2\Desktop\p\app\templates\send_message.html", line 5, in template
+    <h1>{{ Youre messaging: recipient }}</h1>
+    ^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'messaging'
+2025-02-24 12:20:32,714 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-24 12:20:41,310 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-24 12:20:56,444 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-24 12:27:46,577 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-24 12:27:50,310 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-25 09:17:36,391 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-25 09:53:16,075 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:53]
+2025-02-25 09:55:21,895 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-25 10:06:00,957 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-25 10:06:05,124 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-25 10:06:13,254 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-25 10:32:47,646 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-25 10:33:13,111 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-25 10:43:05,138 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-25 11:03:30,501 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-25 11:05:09,997 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:49]
+2025-02-25 11:05:43,960 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:53]
+2025-02-25 11:06:07,480 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:55]
+2025-02-25 11:06:36,568 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:50]
+2025-02-25 11:18:20,068 ERROR: Exception on /messages [GET] [in C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\app\routes.py", line 237, in messages
+    current_user.add_notification('unread_message_count', 0)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'add_notification'
+2025-02-25 11:18:54,064 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:50]
+2025-02-25 11:19:03,175 ERROR: Exception on /send_message/dsdfdfdf [POST] [in C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\student2\Desktop\p\app\routes.py", line 225, in send_message
+    user.add_notification('unread_message_count',
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'add_notification'
+2025-02-26 09:07:07,126 INFO: Microblog startup [in C:\Users\student2\Desktop\p\app\__init__.py:50]
