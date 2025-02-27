@@ -23,7 +23,7 @@ async def get_user(name: str):
     else:
         user["_id"] = str(user["_id"]) 
         return JSONResponse(content=user)
-
+ 
 @app.delete('/user/{name}')
 async def delete_user(name: str):
     result = coll.delete_one({"username": name})
